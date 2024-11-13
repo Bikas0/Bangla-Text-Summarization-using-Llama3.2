@@ -15,6 +15,8 @@ Background
 With the growing volume of digital content in Bangla, an efficient text summarization tool is essential for processing and understanding large amounts of text. This project utilizes Llama 3.2, a high-performing language model, and Unsloth, a library designed for efficient fine-tuning. Together, they allow for fine-tuning the model on Bangla datasets to produce relevant and coherent summaries of Bangla texts.
 
 Requirements
+
+```bash
 Python 3.8 or higher
 CUDA (if using GPU)
 transformers
@@ -23,21 +25,32 @@ unsloth (for efficient fine-tuning)
 scikit-learn (for evaluation metrics)
 pandas
 numpy
+```
+
 Installation
 Clone the repository:
-bash
+
+```bash
 Copy code
 git clone https://github.com/yourusername/Bangla-Text-Summarization-using-Llama3.2.git
 cd Bangla-Text-Summarization-using-Llama3.2
+```
+
 Create a virtual environment (optional but recommended):
-bash
+
+```bash
 Copy code
 python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+```
+
 Install the required packages:
-bash
+
+```bash
 Copy code
 pip install -r requirements.txt
+```
+
 Data Preparation
 To fine-tune Llama 3.2 for Bangla summarization, you need a dataset of Bangla texts with reference summaries. Ensure the dataset has two main columns: text (the full Bangla text) and summary (the target summary).
 
