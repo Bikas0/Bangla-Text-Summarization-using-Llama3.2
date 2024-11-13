@@ -3,19 +3,23 @@
 This repository contains code and resources for performing text summarization on Bangla (Bengali) text data using the Llama 3.2 1B model, fine-tuned with the help of the Unsloth library. The goal of this project is to generate concise, coherent summaries for Bangla texts using a state-of-the-art language model fine-tuned for optimal performance on the Bangla language.
 
 Table of Contents
-Background
-Requirements
-Installation
-Data Preparation
-Fine-tuning the Model
-Evaluation
-Usage
-Contributing
-License
-Background
+<ol>
+<li>Background</li>
+<li>Requirements</li>
+<li>Installation</li>
+<li>Data Preparation</li>
+<li>Fine-tuning the Model</li>
+<li>Evaluation</li>
+<li>Usage</li>
+<li>Contributing</li>
+<li>License</li>
+</ol>
+
+<h3>Background</h3>
+
 With the growing volume of digital content in Bangla, an efficient text summarization tool is essential for processing and understanding large amounts of text. This project utilizes Llama 3.2, a high-performing language model, and Unsloth, a library designed for efficient fine-tuning. Together, they allow for fine-tuning the model on Bangla datasets to produce relevant and coherent summaries of Bangla texts.
 
-Requirements
+<h3>Requirements</h3>
 
 ```bash
 Python 3.8 or higher
@@ -27,8 +31,7 @@ scikit-learn (for evaluation metrics)
 pandas
 numpy
 ```
-
-Installation
+<h3>Installation</h3>
 Clone the repository:
 
 ```bash
@@ -36,8 +39,7 @@ Copy code
 git clone https://github.com/yourusername/Bangla-Text-Summarization-using-Llama3.2.git
 cd Bangla-Text-Summarization-using-Llama3.2
 ```
-
-Create a virtual environment (optional but recommended):
+<h3>Create a virtual environment (optional but recommended):</h3>
 
 ```bash
 Copy code
@@ -45,20 +47,15 @@ python -m venv venv
 source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
 
-Install the required packages:
+<h3>Install the required packages:</h3>
 
 ```bash
 Copy code
 pip install -r requirements.txt
 ```
 
-Data Preparation
+<h3>Data Preparation</h3>
 To fine-tune Llama 3.2 for Bangla summarization, you need a dataset of Bangla texts with reference summaries. Ensure the dataset has two main columns: text (the full Bangla text) and summary (the target summary).
-
-Sample dataset format (CSV):
-
-csv
-Copy code
 
 ```bash
 text,summary
@@ -73,9 +70,6 @@ Prepare the dataset in a suitable format (e.g., CSV or JSON).
 
 Run the fine-tuning script:
 
-python
-Copy code
-python fine_tune.py --data_path path/to/dataset.csv --epochs <num_epochs> --batch_size <batch_size> --learning_rate <learning_rate>
 Modify num_epochs, batch_size, and learning_rate based on your hardware and requirements.
 
 The fine_tune.py script:
