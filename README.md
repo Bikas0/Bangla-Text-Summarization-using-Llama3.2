@@ -1,4 +1,5 @@
-Bangla Text Summarization using Llama 3.2
+<h1>Bangla Text Summarization using Llama 3.2</h1>
+
 This repository contains code and resources for performing text summarization on Bangla (Bengali) text data using the Llama 3.2 1B model, fine-tuned with the help of the Unsloth library. The goal of this project is to generate concise, coherent summaries for Bangla texts using a state-of-the-art language model fine-tuned for optimal performance on the Bangla language.
 
 Table of Contents
